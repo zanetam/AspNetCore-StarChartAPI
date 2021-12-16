@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -15,5 +16,7 @@ namespace StarChart.Models
         
         [NotMapped]
         public List<CelestialObject> Satellites { get; set; }
+
+        public TimeSpan OrbitalPeriod { get; set; }
     }
 }
